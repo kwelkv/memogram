@@ -183,6 +183,7 @@ const [isRefreshing, setIsRefreshing] = useState(false);
         <td>{row.business}</td>
         <td>{row.type}</td>
         <td>{row.email}</td>
+        <td>1</td>
         <td>
         <span
         className={`status-badge ${row.status.replace(" ", "-").toLowerCase()}`}>
