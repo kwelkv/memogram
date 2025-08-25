@@ -1,0 +1,59 @@
+/* BuildingManager 전용 스타일 - 접두어: bm- */
+
+.bm-container {
+  padding: 60px;
+  background-color: #ffffff;
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+/* 테이블 */
+.bm-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 15px;
+}
+
+.bm-table th, .bm-table td {
+  padding: 12px;
+  border-bottom: 1px solid #ddd;
+  text-align: center;
+}
+
+.bm-table tbody tr:last-child td {
+  border-bottom: 1px solid #999; /* 마지막 하단 선 명확히 표시 */
+}
+
+
+/* 버튼 영역 */
+.bm-view-all-wrapper {
+  margin-top: 20px;
+  text-align: right;
+}
+
+.bm-view-all-btn {
+  background-color: #1976d2;
+  color: white;
+  padding: 8px 14px;
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.bm-view-all-btn:hover {
+  background-color: #1565c0;
+}
+
+.bm-delete-btn {
+  background-color: #e53935;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.bm-delete-btn:hover {
+  background-color: #c62828;
+}

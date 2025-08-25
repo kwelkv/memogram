@@ -1,0 +1,36 @@
+.carousel-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.arrow {
+  font-size: 30px;
+  cursor: pointer;
+  margin: 0 20px;
+  user-select: none; /* 드래그 방지 */
+  color: #333;
+}
+
+.arrow:hover {
+  color: #1976d2; /* 살짝 강조 효과 */
+}
+
+.building-name {
+  font-size: 24px;
+}
+
+.memo-list {
+  display: flex;
+  flex-direction: column; /* 세로 정렬 */
+  gap: 15px;
+}
+
+.memo-item {
+  background-color: #f0f0f0;
+  padding: 15px;
+  border-radius: 8px;
+  width: 100%; /* 가로 100% */
+  box-sizing: border-box;
+}

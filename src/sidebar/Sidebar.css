@@ -1,0 +1,87 @@
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background-color: #111;
+  color: white;
+  transition: width 0.3s ease;
+  overflow: hidden;
+  white-space: nowrap;
+  z-index: 1000;
+}
+
+.sidebar.open { width: 200px; }
+.sidebar.closed { width: 60px; }
+
+/* 헤더 */
+.sidebar-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px;
+  height: 50px;
+}
+
+.sidebar-logo-text {
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  letter-spacing: 1px;
+}
+
+.sidebar.closed .sidebar-logo-text { display: none; }
+
+/* 열고닫기 버튼 */
+.back-btn {
+  background: #222;
+  border: none;
+  color: white;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: transform 0.3s ease;
+  padding: 5px;
+}
+.sidebar.open .back-btn { transform: rotate(0deg); }
+.sidebar.closed .back-btn { transform: rotate(180deg); }
+
+/* 메뉴 */
+.menu-list { list-style: none; padding: 0; margin: 0; }
+.menu-btn {
+  width: 100%;
+  background: none;
+  border: none;
+  color: white;
+  padding: 15px;
+  text-align: left;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  border-radius: 6px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  font-size: 14px;
+}
+.menu-btn:hover {
+  background-color: #2d2f36; /* 은은한 회색 */
+  transform: translateX(3px); /* 살짝 오른쪽 이동 */
+}
+
+.menu-icon {
+  margin-right: 10px;
+  font-size: 16px;
+}
+
+.sidebar.closed .menu-btn .menu-text {
+  display: none;
+}
+
+/* 메인 컨텐츠 */
+.main-content {
+  margin-left: 0;
+  transition: margin-left 0.3s ease;
+  padding: 20px;
+}
+.sidebar.open ~ .main-content { margin-left: 200px; }
+.sidebar.closed ~ .main-content { margin-left: 40px; }

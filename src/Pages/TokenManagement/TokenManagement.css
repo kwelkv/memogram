@@ -1,0 +1,90 @@
+.refresh-token-container {
+  padding: 20px;
+  background: #f8f9fa;
+  border-radius: 8px;
+}
+
+.refresh-token-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.refresh-token-actions {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.refresh-token-search {
+  flex: 1;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.refresh-token-filter {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.refresh-token-btn-bulk {
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.refresh-token-btn-bulk:hover {
+  background: #0056b3;
+}
+
+.refresh-token-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+  background: white;
+}
+
+.refresh-token-table th,
+.refresh-token-table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+}
+
+.refresh-token-table th {
+  background: #343a40;
+  color: white;
+}
+
+.refresh-token-status.active {
+  color: #28a745;
+  font-weight: bold;
+}
+
+.refresh-token-status.revoked {
+  color: #dc3545;
+  font-weight: bold;
+}
+
+.refresh-token-status.expired {
+  color: #6c757d;
+  font-weight: bold;
+}
+
+.refresh-token-btn-revoke {
+  background: #dc3545;
+  color: white;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.refresh-token-btn-revoke:hover {
+  background: #a71d2a;
+}

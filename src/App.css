@@ -1,0 +1,30 @@
+.App {
+  font-family: sans-serif;
+}
+
+.toggle-btn {
+  position: fixed;
+  top: 1rem;
+  left: 1rem;
+  font-size: 20px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 1100;
+}
+
+.toggle-btn:hover {
+  background-color: #c0c0c0; /* 메뉴 항목과 동일한 hover 색상 */
+  border-radius: 4px;
+}
+
+main {
+  padding: 2rem;
+  transition: margin-left 0.3s ease;
+  margin-left: 0; /* 사이드바 닫힌 기본 상태 */
+}
+
+/* 사이드바가 열렸을 때 콘텐츠를 오른쪽으로 밀기 */
+.sidebar.open ~ main {
+  margin-left: 220px; /* 사이드바 너비와 같게 설정 */
+}
